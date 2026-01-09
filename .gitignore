@@ -1,0 +1,30 @@
+# Nginx
+**/*.pid
+logs/
+*.log
+
+# Временные файлы
+**/*.swp
+**/*.swo
+**/*.tmp
+
+# Конфигурационные секреты
+**/*.secret
+**/*.key
+**/*.crt
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Backup файлы
+**/*.bak
+**/*.backup

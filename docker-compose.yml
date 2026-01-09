@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  node-app-1:
+    build: ./node-app-1
+    container_name: my-node-app-1
+
+  node-app-2:
+    build: ./node-app-2
+    container_name: my-node-app-2
+
+  nginx:
+    build: ./nginx
+    container_name: my-nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - node-app-1
+      - node-app-2
